@@ -1,4 +1,6 @@
-package Module3;
+package Module3.task1;
+
+import Module3.task1.Bird;
 
 /**
  * Created by aleks_000 on 12.11.2016.
