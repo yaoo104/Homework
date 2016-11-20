@@ -18,7 +18,7 @@ package Module3.task1.Task2;
             System.out.println(adder.check(1, 3));
 
             System.out.println(arithmetic.add(7, 5));
-            
+
         }
     }
 
