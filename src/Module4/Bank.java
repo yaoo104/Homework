@@ -13,17 +13,14 @@ abstract class Bank {
     private double avrSalaryOfEmployee;
     private long rating;
     private long totalCapital;
-    private double AvraSalaryOfEmployee;
 
     abstract int getLimitOfWithdrawal();
-
     abstract int getLimitOfFunding();
 
-    abstract int getCommission(int summ);
+    public abstract int getMonthlyRate();
 
-    public double moneyPaidMonthlyForSalary() {
-        return avrSalaryOfEmployee * numberOfEmployees;
-    }
+    abstract int getCommission(int summ);
+    abstract double moneyPaidMonthlyForSalary();
 
     public Bank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee,
                 long rating, long totalCapital) {
@@ -35,7 +32,10 @@ abstract class Bank {
         this.rating = rating;
         this.totalCapital = totalCapital;
 
-    }
+       }
+
+
+
     public long getId() {
         return id;
     }
@@ -85,13 +85,13 @@ abstract class Bank {
     }
 
     public double getAvraSalaryOfEmployee() {
-        return AvraSalaryOfEmployee;
+        return avrSalaryOfEmployee;
     }
 
     public void setAvrSalaryOfEmployee(double avrSalaryOfEmployee) {
         this.avrSalaryOfEmployee = avrSalaryOfEmployee;
     }
-}
 
+}
 
 
