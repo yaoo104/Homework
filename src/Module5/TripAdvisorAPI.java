@@ -6,6 +6,7 @@ import java.util.Date;
  * Created by aleks_000 on 04.01.2017.
  */
 public class TripAdvisorAPI implements API {
+
     public Room[]rooms;
 
     public TripAdvisorAPI() {
@@ -26,6 +27,11 @@ public class TripAdvisorAPI implements API {
 
     @Override
     public Room[] getRooms() {
+        return new Room[0];
+    }
+
+    @Override
+    public Room[] getAll() {
         return new Room[0];
     }
 }
