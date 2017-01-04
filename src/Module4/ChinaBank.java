@@ -14,8 +14,7 @@ public class ChinaBank extends Bank{
     }
     @Override
     public int getLimitOfWithdrawal() {
-        if (this.getCurrency() == Currency.USD) return 100;
-        else return 150;
+        return this.getCurrency() == Currency.USD ? 100 : 150;
     }
 
     @Override

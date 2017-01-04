@@ -1,5 +1,9 @@
 package Module5;
 
+import sun.util.calendar.BaseCalendar;
+
+import java.util.Date;
+
 /**
  * Created by aleks_000 on 04.01.2017.
  */
@@ -33,18 +37,20 @@ public class Room{
     }
 
     public Room (long id, int price, int person, Date dateAvailableFrom, String hotelName, String cityName) {
-    }
-    this.id = id;
-    this.price = price;
-    this.person = person;
-    this.dateAvailableFrom = dateAvailableFrom;
-    this.hotelName = hotelName;
-    this.cityName = cityName;
+        this.id = id;
+        this.price = price;
+        this.person = person;
+        this.dateAvailableFrom = dateAvailableFrom;
+        this.hotelName = hotelName;
+        this.cityName = cityName;
 
-    public long getId() {
-        return id;
     }
-    public void setId(long id){
+
+        public long getId () {
+            return id;
+        }
+
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -56,7 +62,7 @@ public class Room{
         this.price = price;
     }
 
-    public void setPersons(int persons) {
+    public void setPerson(int person) {
         this.person = person;
     }
 
@@ -88,4 +94,5 @@ public class Room{
         return cityName;
     }
 }
-}
+
+
