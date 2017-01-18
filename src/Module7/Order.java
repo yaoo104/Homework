@@ -23,6 +23,10 @@ public class Order {
         this.user = user;
     }
 
+    public Order(int id, int price, Module7.Currency currency, String item1, String indificator1, User user1) {
+
+    }
+
     public long getId() {
         return id;
     }
@@ -70,5 +74,6 @@ public class Order {
     public void setUser(User user) {
         this.user = user;
     }
+
 
 }
